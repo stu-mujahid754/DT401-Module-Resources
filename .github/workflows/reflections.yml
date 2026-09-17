@@ -1,0 +1,50 @@
+name: Compile reflections
+
+on:
+  push:
+    paths:
+      - "Week */**/*.ipynb"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile-reflections:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install nbformat
+
+      - name: Extract reflections for changed weeks
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            python scripts/extract_reflections.py --since "${{ github.event.before }}"
+          else
+            python scripts/extract_reflections.py
+          fi
+
+      - name: Compile weekly_reflections.md
+        run: python scripts/compile_weekly_reflections.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No reflection changes to commit"
+            exit 0
+          fi
+          git commit -m "Update compiled reflections"
+          git push origin HEAD:${{ github.ref_name }}

@@ -1,0 +1,29 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "onCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+  "updateContentCommand": "",
+  "postCreateCommand": "",
+  "postAttachCommand": "/usr/local/bin/python3 -m ipykernel install --user --name python312 --display-name 'Python 3.12'",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "ms-toolsai.datawrangler",
+        "bierner.markdown-mermaid"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python3",
+        "jupyter.defaultKernel": "Python 3.12",
+        "notebook.kernelPicker.type": "mru"
+      }
+    }
+  }
+}
