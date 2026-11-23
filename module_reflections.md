@@ -319,6 +319,4 @@ RTT contains patient-level data, including patient name, date of birth, postcode
 2. In this scenario, I believe that underestimating has a further negative impact. If 100 are predicted and 130 show up, there is a strong chance that there would not be enough resources, equipment, or maybe not enough for task allocation. It would also make planned inductions, training, and supervision much more difficult for the charity. However, if we had 100 predicted and 70 show, it would mean less volunteers and more organisational resources available. This could affect forecasted planned activities and tasks. I would build an operational buffer around my forecast to ensure enough resources are available but not too much, as this would make things cost effective, especially for a charity. “Leading organisations widely acknowledge that forecasting is at the heart of the performance management process” (KPMG International, 2007, p. 2).
 
 References (if applicable):
-GOV.UK (n.d.) Data Protection.  Available at: https://www.gov.uk/data-protection (Accessed: 19 November 2026).   
-
 KPMG International (2007) Forecasting with confidence: Insights from leading finance functions. Available at: https://assets.kpmg.com/content/dam/kpmg/pdf/2016/07/forecasting-with-confidence.pdf (Accessed: 22 November 2026).
