@@ -24,7 +24,7 @@ In terms of the three above, this data cannot move further; it can be improved o
 3. The one step I would take is to conduct some trend analysis and compare month on month, year on year, location, seasonality, and some data quality metrics based on the average sunshine duration against different locations available, to ensure the data is reliable in its entirety. This would then help me identify any data quality issues within the meteo dataset. With these changes and improvements this will allow my data set to evolve from Information to a meaningful insight."Accumulated data lacks the uniformity and homogeneity often implied in pyramid models, misrepresenting the role of evidence and argument in the construction of knowledge and wisdom". (Peters, Michael A,2024,p.7-17)
 
 References (if applicable):
-By:Peters, Michael A.In:Psychosociological Issues in Human Resource Management, 2024, volume 12, issue 2, pages 7-17 (11p)Business Source Elite
+Peters, M.A. (2024) ‘From 2-D pyramid to generative network: Reimagining the DIKW hierarchy as a biodigital network intelligent ecosystem’, Psychosociological Issues in Human Resource Management, 12(2), pp. 7–17. Available via: Business Source Elite (Accessed: 15 October 2026).
 
 ---
 
@@ -38,12 +38,12 @@ By:Peters, Michael A.In:Psychosociological Issues in Human Resource Management, 
 
 #### Responses
 
-1. In our data warehouse, we store financial data as well as patient data, and in some cases, this is stored financial information from our PLICs system and Income information for SLAM (Service Level Agreement Monitoring). If I were to extract this as a text field and tried to do calculations or mathematical formulas with this it would produce incorrect output or incorrect sums on a financial total, which is detrimental to understanding the organisation's financial position, both expenditure and income. Microsoft (n.d., SUM (Transact-SQL)) explains that the SQL SUM function can only be used with numeric data types.
+1. In our data warehouse, we store financial data as well as patient data, and in some cases, this is stored financial information from our PLICs system and Income information for SLAM (Service Level Agreement Monitoring). If I were to extract this as a text field and tried to do calculations or mathematical formulas with this it would produce incorrect output or incorrect sums on a financial total, which is detrimental to understanding the organisation's financial position, both expenditure and income. Microsoft (2026),explains that the SQL SUM function can only be used with numeric data types.
 
 
 References (if applicable):
 
-Microsoft (n.d.) SUM (Transact-SQL) – SQL Server. https://learn.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql
+Microsoft (2026) SUM (Transact-SQL) – SQL Server. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql (Accessed: 15 October 2026).
 
 ---
 
@@ -56,8 +56,13 @@ Microsoft (n.d.) SUM (Transact-SQL) – SQL Server. https://learn.microsoft.com/
 #### Responses
 
 1. The DM01 diagnostic data is immutable, as it is published and widely used in the Department of Health insights, so we cannot make changes. I would identify our IP (Inpatient) Waiting list as mutable. Even though the script is maintained due to business needs. It requires daily updates from our data warehouse extract files to establish an updated worklist. This will update the necessary information for the operational teams, which includes waiting times, pathway updates, etc.
-My organisation approaches this strategically by storing the snapshots and providing read-only access to staff. This business logic is also managed by in-house change control processes. There have been instances where the stored processes in our SQL Agent jobs have failed due to another process failing in the sequence. These processes have caused inaccuracy in our board reporting at times. This raised the necessary reconciliation tasks for the BI team to maintain integrity and accuracy. “Patient records, treatment histories, and diagnostic results must remain unchanged to ensure accuracy and trust. Immutable data ensures that once information is recorded, it cannot be tampered with, offering a reliable and auditable history.”
-Tan, L. (2025) Immutable vs. mutable: The data debate that could define your success. Available at: https://estore.flexxon.com/blogs/immutable-storage/immutable-vs-mutable-the-data-debate-that-could-define-your-success
+My organisation approaches this strategically by storing the snapshots and providing read-only access to staff. This business logic is also managed by in-house change control processes. There have been instances where the stored processes in our SQL Agent jobs have failed due to another process failing in the sequence. These processes have caused inaccuracy in our board reporting at times. This raised the necessary reconciliation tasks for the BI team to maintain integrity and accuracy. “Patient records, treatment histories, and diagnostic results must remain unchanged to ensure accuracy and trust. "Immutable data ensures that once information is recorded, it cannot be tampered with, offering a reliable and auditable history”(Tan, 2025).
+
+
+
+References (if applicable):
+
+Tan, L. (2025) ‘Immutable vs. mutable: The data debate that could define your success’, Flexxon. Available at: https://estore.flexxon.com/blogs/immutable-storage/immutable-vs-mutable-the-data-debate-that-could-define-your-success (Accessed: 15 October 2026).
 
 ---
 
@@ -99,7 +104,7 @@ Tan, L. (2025) Immutable vs. mutable: The data debate that could define your suc
 information is extremely important."(NHS England, 2022, p. 4).
 
 References (if applicable):
-NHS ENGLAND, 2021. Recording and reporting referral to treatment (RTT) waiting times for consultant-led elective care. London: NHS England. Available from: https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Recording-and-Reporting-guidance-April_2021.pdf
+NHS England (2021) Recording and reporting referral to treatment (RTT) waiting times for consultant-led elective care. Available at: https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Recording-and-Reporting-guidance-April_2021.pdf (Accessed: 22 October 2026).
 
 ---
 
@@ -122,7 +127,7 @@ This would need to be balance alongside row level security ensuring staff only h
 
 References (if applicable):
 
-Krill, P. (1998) ‘Data warehouses have need for clean data’, InfoWorld, 16 March. Available at: https://research.ebsco.com/c/m7mrx2/search/details/4mjzqctlkb
+Krill, P. (1998) ‘Data warehouses have need for clean data’, InfoWorld, 16 March. Available at: https://research.ebsco.com/c/m7mrx2/search/details/4mjzqctlkb (Accessed: 22 October 2026).
 
 ---
 
@@ -139,7 +144,7 @@ Krill, P. (1998) ‘Data warehouses have need for clean data’, InfoWorld, 16 M
 
 
 
-References (if applicable):NHS England (2022) Re-stating RTT Rules: Referral to Treatment Rules Guidance v1.3.
+References (if applicable):NHS England (2022) Re-stating RTT rules: Referral to Treatment Rules Guidance v1.3. NHS England. (Accessed: 22 October 2026).
 
 ---
 
@@ -159,14 +164,13 @@ References (if applicable):NHS England (2022) Re-stating RTT Rules: Referral to 
 This qualitive information is not only from pathway validation but also from understanding the bottlenecks that are stopping improvement and treatment waiting times. There are times that the validation has been inconsistent between different validators, inconsistent recording and discharge outcomes. This is critical to highlight potential issues with pathway validation and make decisions on our validation strategy. 
 
 
-2. As mentioned above, the RTT waiting list may incur a potential source of bias from incomplete information or unvalidated or uncashed outcomes. Patients may have received their treatment, but because outcomes may not be cashed up, their pathway status may no longer represent a true reflection of their pathway. If uncashed outcomes are not cashed in a timely manner, it could inflate the waiting list. NHS England (2025, pg. 74–75) highlights the importance of recording outpatient clinical outcomes through the cashing up process to support accurate RTT reporting.
+2. As mentioned above, the RTT waiting list may incur a potential source of bias from incomplete information or unvalidated or uncashed outcomes. Patients may have received their treatment, but because outcomes may not be cashed up, their pathway status may no longer represent a true reflection of their pathway. If uncashed outcomes are not cashed in a timely manner, it could inflate the waiting list. NHS England (2025, pp. 74–75) highlights the importance of recording outpatient clinical outcomes through the cashing up process to support accurate RTT reporting.
 Another source would be inconsistent validation across specialties. In many cases, the more scrutinised the service is in terms of performance, the more intense the validation. Some services would be more up to date than others. There are cases where DQ issues only exist in specific areas because of the services and the digital pathway (method of referral received). Upon reflection, I understand that recorded data does not entirely represent operational activity accurately. There are many things to consider, such as completeness, timeliness, and data accuracy.
 
 
 References (if applicable):
 
-NHS England (2025) Recording and reporting referral to treatment (RTT) waiting times for consultant-led elective care. Version 5.0. London: NHS England.
-https://www.england.nhs.uk/wp-content/uploads/sites/2/2025/02/Recording-and-reporting-RTT-waiting-times-guidance-v5.0-Feb25.pdf
+NHS England (2025) Recording and reporting referral to treatment (RTT) waiting times for consultant-led elective care. Version 5.0. London: NHS England. Available at: https://www.england.nhs.uk/wp-content/uploads/sites/2/2025/02/Recording-and-reporting-RTT-waiting-times-guidance-v5.0-Feb25.pdf (Accessed: 5 November 2026).
 
 ---
 
@@ -178,7 +182,7 @@ https://www.england.nhs.uk/wp-content/uploads/sites/2/2025/02/Recording-and-repo
 
 #### Responses
 
-1. The two variables would be outpatient capacity and the number of non-admitted patients on our booking waiting list. For services that have significantly long waiters, normally, you would expect these to have less capacity. Outpatient Capacity can differ between first and follow-up appointments. The services would then compare slot utilisation against their waiting lists per specialty. However, correlation does not necessarily mean causation, as there are factors to consider. Things to consider in terms of outpatient capacity would be staff shortages, session cancellations, waiting list initiatives (additional capacity), specialist clinics, and patient availability. For specialties struggling with demand, additional capacity will need to be considered to optimise operational flow.
+1. The two variables would be outpatient capacity and the number of non-admitted patients on our booking waiting list. For services that have significantly long waiters, normally, you would expect these to have less capacity. Outpatient capacity can differ between first and follow-up appointments. The services would then compare slot utilisation against their waiting lists per specialty. However, correlation does not necessarily mean causation, as there are factors to consider. Things to consider in terms of outpatient capacity would be staff shortages, session cancellations, waiting list initiatives (additional capacity), specialist clinics, and patient availability. For specialties struggling with demand, additional capacity will need to be considered to optimise operational flow.
 
 ---
 
@@ -233,11 +237,10 @@ With all of this in mind, I would use this model to identify financial opportuni
 
 #### Responses
 
-1. Stakeholders in the NHS would care more about the interpretability of the model than the accuracy, however, accuracy is still important. For example, in RTT, whilst accuracy is very important, stakeholders could identify clusters of patients that need operational input, even if accuracy is not at its peak. Whereas you could have a model that is more accurate, but the clusters do not amount to anything that useful unless interpreted. This could potentially identify patients that require immediate booking in order to improve a specialty's position and waiting times, specifically to target intervention. Therefore, I would choose a clustering model such as K-means where the output groups can be interpreted and translated to stakeholders easily. “K-means is widely used because of its simplicity and efficiency in grouping observations based on similar characteristics 
-(Choudhari and Satav, 2026, p. 1)”.
+1. Stakeholders in the NHS would care more about the interpretability of the model than the accuracy, however, accuracy is still important. For example, in RTT, whilst accuracy is very important, stakeholders could identify clusters of patients that need operational input, even if accuracy is not at its peak. Whereas you could have a model that is more accurate, but the clusters do not amount to anything that useful unless interpreted. This could potentially identify patients that require immediate booking in order to improve a specialty's position and waiting times, specifically to target intervention. Therefore, I would choose a clustering model such as K-means where the output groups can be interpreted and translated to stakeholders easily. “K-means is widely used because of its simplicity and efficiency in grouping observations based on similar characteristics "(Choudhari and Satav, 2026, p. 1).
 
 References (if applicable):
-Choudhari, P.M. and Satav, K.S. (2026) ‘To study customer analytics using K-means clustering for business growth at Sarth Solar’, International Scientific Journal of Engineering & Management, 5(4), pp. 1–4.
+Choudhari, P.M. and Satav, K.S. (2026) ‘To study customer analytics using K-means clustering for business growth at Sarth Solar’, International Scientific Journal of Engineering & Management, 5(4), pp. 1–4. (Accessed: 12 November 2026).
 
 ---
 

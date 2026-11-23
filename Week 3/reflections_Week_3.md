@@ -12,7 +12,7 @@
 information is extremely important."(NHS England, 2022, p. 4).
 
 References (if applicable):
-NHS ENGLAND, 2021. Recording and reporting referral to treatment (RTT) waiting times for consultant-led elective care. London: NHS England. Available from: https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Recording-and-Reporting-guidance-April_2021.pdf
+NHS England (2021) Recording and reporting referral to treatment (RTT) waiting times for consultant-led elective care. Available at: https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Recording-and-Reporting-guidance-April_2021.pdf (Accessed: 22 October 2026).
 
 ---
 
@@ -35,7 +35,7 @@ This would need to be balance alongside row level security ensuring staff only h
 
 References (if applicable):
 
-Krill, P. (1998) ‘Data warehouses have need for clean data’, InfoWorld, 16 March. Available at: https://research.ebsco.com/c/m7mrx2/search/details/4mjzqctlkb
+Krill, P. (1998) ‘Data warehouses have need for clean data’, InfoWorld, 16 March. Available at: https://research.ebsco.com/c/m7mrx2/search/details/4mjzqctlkb (Accessed: 22 October 2026).
 
 ---
 
@@ -52,4 +52,4 @@ Krill, P. (1998) ‘Data warehouses have need for clean data’, InfoWorld, 16 M
 
 
 
-References (if applicable):NHS England (2022) Re-stating RTT Rules: Referral to Treatment Rules Guidance v1.3.
+References (if applicable):NHS England (2022) Re-stating RTT rules: Referral to Treatment Rules Guidance v1.3. NHS England. (Accessed: 22 October 2026).

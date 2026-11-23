@@ -8,12 +8,12 @@
 
 ### Responses
 
-1. In our data warehouse, we store financial data as well as patient data, and in some cases, this is stored financial information from our PLICs system and Income information for SLAM (Service Level Agreement Monitoring). If I were to extract this as a text field and tried to do calculations or mathematical formulas with this it would produce incorrect output or incorrect sums on a financial total, which is detrimental to understanding the organisation's financial position, both expenditure and income. Microsoft (n.d., SUM (Transact-SQL)) explains that the SQL SUM function can only be used with numeric data types.
+1. In our data warehouse, we store financial data as well as patient data, and in some cases, this is stored financial information from our PLICs system and Income information for SLAM (Service Level Agreement Monitoring). If I were to extract this as a text field and tried to do calculations or mathematical formulas with this it would produce incorrect output or incorrect sums on a financial total, which is detrimental to understanding the organisation's financial position, both expenditure and income. Microsoft (2026),explains that the SQL SUM function can only be used with numeric data types.
 
 
 References (if applicable):
 
-Microsoft (n.d.) SUM (Transact-SQL) – SQL Server. https://learn.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql
+Microsoft (2026) SUM (Transact-SQL) – SQL Server. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql (Accessed: 15 October 2026).
 
 ---
 
@@ -26,8 +26,13 @@ Microsoft (n.d.) SUM (Transact-SQL) – SQL Server. https://learn.microsoft.com/
 ### Responses
 
 1. The DM01 diagnostic data is immutable, as it is published and widely used in the Department of Health insights, so we cannot make changes. I would identify our IP (Inpatient) Waiting list as mutable. Even though the script is maintained due to business needs. It requires daily updates from our data warehouse extract files to establish an updated worklist. This will update the necessary information for the operational teams, which includes waiting times, pathway updates, etc.
-My organisation approaches this strategically by storing the snapshots and providing read-only access to staff. This business logic is also managed by in-house change control processes. There have been instances where the stored processes in our SQL Agent jobs have failed due to another process failing in the sequence. These processes have caused inaccuracy in our board reporting at times. This raised the necessary reconciliation tasks for the BI team to maintain integrity and accuracy. “Patient records, treatment histories, and diagnostic results must remain unchanged to ensure accuracy and trust. Immutable data ensures that once information is recorded, it cannot be tampered with, offering a reliable and auditable history.”
-Tan, L. (2025) Immutable vs. mutable: The data debate that could define your success. Available at: https://estore.flexxon.com/blogs/immutable-storage/immutable-vs-mutable-the-data-debate-that-could-define-your-success
+My organisation approaches this strategically by storing the snapshots and providing read-only access to staff. This business logic is also managed by in-house change control processes. There have been instances where the stored processes in our SQL Agent jobs have failed due to another process failing in the sequence. These processes have caused inaccuracy in our board reporting at times. This raised the necessary reconciliation tasks for the BI team to maintain integrity and accuracy. “Patient records, treatment histories, and diagnostic results must remain unchanged to ensure accuracy and trust. "Immutable data ensures that once information is recorded, it cannot be tampered with, offering a reliable and auditable history”(Tan, 2025).
+
+
+
+References (if applicable):
+
+Tan, L. (2025) ‘Immutable vs. mutable: The data debate that could define your success’, Flexxon. Available at: https://estore.flexxon.com/blogs/immutable-storage/immutable-vs-mutable-the-data-debate-that-could-define-your-success (Accessed: 15 October 2026).
 
 ---
 
